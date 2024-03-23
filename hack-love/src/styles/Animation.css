@@ -1,0 +1,44 @@
+.rotating-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20vw;
+    height: 20vw;
+    transform: translate(-50%, 60%) rotate(0deg);
+    animation: rotateAnimation 2s linear;
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: translate(-50%, 60%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, 60%) rotate(360deg);
+    }
+  }
+
+  .fade-in {
+    animation: fadeInRight 0.49s ease-in-out;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+  } 
+  
+  @keyframes fadeOutRight {
+    0% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+    100% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+ } 
