@@ -19,6 +19,16 @@
   }
 }
 
+/* 
+.rotateStart {
+  transform: rotate(-120deg) translateX(-50%);
+}
+
+.rotateEnd {
+  transform: rotate(0deg) translateX(-50%);
+  transition: transform 1s 0.5s;
+} */
+
 /* .startleft {
   opacity: 0;
   transform: translateX(-20px);

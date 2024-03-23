@@ -17,11 +17,11 @@ const Entering = () => {
             </Col>
 
             <Col xs="12" className="d-flex justify-content-center align-items-center mb-5">
-                <img src={photo} alt="돼지국밥" className="centered-image" style={{ width: '20vw', height: '20vw' }} />
+                <img src={photo} alt="돼지국밥" className="centered-image" style={{ width: '20vh', height: '20vh' }} />
             </Col>
-            <Col sm="12" className="d-flex justify-content-center align-items-center mb-5">
+            <Col sm="12" className="d-flex justify-content-center align-items-center">
                 <Label for="location"
-                    tag="h4">
+                    tag="h4" >
                     별명
                 </Label>
             </Col>
@@ -29,6 +29,7 @@ const Entering = () => {
                 <input
                     type="text"
                     style={{
+                        textAlign: 'center',
                         border: 'none',
                         borderBottom: '1px solid #ced4da',
                         width: '300px',
