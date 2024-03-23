@@ -1,0 +1,16 @@
+.circle {
+    width: 200px; /* Diameter of the circle */
+    height: 200px; /* Diameter of the circle */
+    border-radius: 50%; /* Creates a circle */
+    background-color: lightblue; /* Color of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .centered-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
