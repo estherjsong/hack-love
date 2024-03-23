@@ -1,44 +1,70 @@
 .rotating-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20vw;
-    height: 20vw;
-    transform: translate(-50%, 60%) rotate(0deg);
-    animation: rotateAnimation 2s linear;
-  }
-  
-  @keyframes rotateAnimation {
-    from {
-      transform: translate(-50%, 60%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, 60%) rotate(360deg);
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  transform: rotate(0deg);
+  transform-origin: 0 -50%;
+  animation: rotateAnimation 1.5s ease-out;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(-120deg) translateX(-50%);
   }
 
-  .fade-in {
-    animation: fadeInRight 0.49s ease-in-out;
+  to {
+    transform: rotate(0deg) translateX(-50%);
+  }
+}
+
+/* .startleft {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.startright {
+  opacity: 0;
+  transform: translateX(20px);
+} */
+
+.start {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.end {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s 0.5s, transform 1s 0.5s;
+}
+
+/* .fade-in {
+  animation: fadeInRight 0.49s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 
-  @keyframes fadeInRight {
-    0% {
-       opacity: 0;
-       transform: translateX(-20px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateX(0);
-    }
-  } 
-  
-  @keyframes fadeOutRight {
-    0% {
-       opacity: 1;
-       transform: translateX(0);
-    }
-    100% {
-       opacity: 0;
-       transform: translateX(20px);
-    }
- } 
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+} */
