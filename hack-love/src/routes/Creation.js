@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import '../styles/Circle.css';
 import photo from '../img/photo_1.PNG';
 import { Row, Col } from "reactstrap";
@@ -10,10 +11,13 @@ const Creation = () => {
 
   return (
     <div>
-      <h4>원하는대로 고르기</h4>
-      <Row className="align-items-center">
-        <Col xs="12" lg="6" className="d-flex justify-content-center align-items-center">
-          <div className="circle">
+      <Row className="align-items-center mb-5">
+        <Col lg="12" className="d-flex justify-content-center align-items-center mt-3 mb-5">
+          <h4>원하는대로 고르기</h4>
+        </Col>
+
+        <Col xs="12" lg="6" className="d-flex justify-content-center align-items-center mb-5">
+          <div className="circle" style={{width: '20vw', height: '20vw'}}>
             <img src={photo} alt="돼지국밥" className="centered-image" />
           </div>
         </Col>
@@ -32,6 +36,11 @@ const Creation = () => {
               setLocation(e.target.value);
             }}
           />
+        </Col>
+        <Col className="d-flex justify-content-center align-items-center mt-3 mb-5">
+          <div>
+            <Link to="/enter_room" className='nextBtn' style={{ color: '#0D0D0D', textDecoration: 'none' }}>CREATE</Link>
+          </div>
         </Col>
       </Row>
     </div>
