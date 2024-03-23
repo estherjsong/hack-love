@@ -9,6 +9,17 @@
   animation: rotateAnimation 1.5s ease-out;
 }
 
+.rotating-image-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  transform: rotate(0deg);
+  transform-origin: 0 -100%;
+  animation: rotateAnimation 1.5s ease-out;
+}
+
 @keyframes rotateAnimation {
   from {
     transform: rotate(-120deg) translateX(-50%);

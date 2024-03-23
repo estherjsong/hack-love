@@ -97,24 +97,24 @@ const Result = () => {
     opacityRight = 1;
   }
 
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 576) {
     return (
-      <div>
-        <div style={{ position: 'absolute', marginTop: '-35vh', zIndex: '-1', alignItems: 'center', marginBottom: '8vw', left: '50vw', transform: 'translateX(-50%)'}}>
+      <div style={{ overflowX: 'hidden', overflowY: 'hidden'}}>
+        <div style={{position: 'absolute', marginTop: '-35vh', zIndex: '-1', alignItems: 'center', marginBottom: '8vw', left: '50vw', transform: 'translateX(-50%)'}}>
           <div className="circle" style={{ width: '70vh', height: '70vh'}}>
           </div>
-          <img className={`rotating-image`} src={list[position].img} alt="돼지국밥" style={{ position: 'absolute', width: '20vw', heigth: '20vw', top: '12vw', left: '50%', transform: 'translateX(-50%)' }} />
+          <img className={`rotating-image-mobile`} src={list[position].img} alt="돼지국밥" style={{ position: 'absolute', width: '20vh',height: '20vh', top: '55vh', left: '50%', transform: 'translateX(-50%)' }} />
         </div>
-        <div style={{ position: 'absolute', left: '0', top: '8vw', width: '100%' }}>
+        <div style={{ position: 'absolute', left: '0', top: '25vh', width: '100%' }}>
           <h4 style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>{position + 1}위</h4>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ paddingTop: '40vh', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" opacity={opacityLeft} onClick={handleLeftArrowClick}>
             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
           </svg>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h1 className={`start ${fade}`} style={{ margin: '3vh 0' }}>{list[position].des1} <mark style={{ backgroundColor: '#54878B', color: 'white' }}>{list[position].menu}</mark></h1>
-            <h2 className={`start ${fade}`}>{list[position].des2}</h2>
+            <h1 className={`start ${fade}`} style={{ margin: '3vh 0' , wordBreak:'keep-all'}}>{list[position].des1} <mark style={{ backgroundColor: '#54878B', color: 'white' }}>{list[position].menu}</mark></h1>
+            <h2 className={`start ${fade}`} style={{ wordBreak:'keep-all' }}>{list[position].des2}</h2>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="2vw" height="2vw" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" opacity={opacityRight} onClick={handleRightArrowClick}>
             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
