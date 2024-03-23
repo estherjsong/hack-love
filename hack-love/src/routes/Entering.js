@@ -7,6 +7,29 @@ import { Row, Col, Label } from "reactstrap";
 const Entering = () => {
     const [nickname, setNickname] = useState('숑콜라');
 
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch('/register/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name: nickname }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(data.message);
+                } else {
+
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            })
+    }
+
     return (
         <Row className="align-items-center mb-5">
             <Col lg="12" className="d-flex justify-content-center align-items-center mt-3">
@@ -48,7 +71,7 @@ const Entering = () => {
             </Col>
             <Col className="d-flex justify-content-center align-items-center mt-3 mb-5">
                 <div>
-                    <Link to="/waiting_room" className='link' style={{ color: '#0D0D0D', textDecoration: 'none', fontWeight: '200', fontSize: '1.8rem'}}>JOIN</Link>
+                    <Link onClick={handleSubmit} to="/waiting_room" className='link' style={{ color: '#0D0D0D', textDecoration: 'none', fontWeight: '200', fontSize: '1.8rem' }}>JOIN</Link>
                 </div>
             </Col>
         </Row>
