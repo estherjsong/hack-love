@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import '../../index.css';
 
 const Header = () => {
 
@@ -10,10 +11,8 @@ const Header = () => {
             </div>
 
             <div>
-                <Link to="/board">방 만들기</Link>
-            </div>
-            <div>
-                <Link to="/board">문의하기</Link>
+                <Link to="/board" className='link'>방 만들기</Link>
+                <Link to="/board" className='link'>문의하기</Link>
             </div>
         </header>
     );
