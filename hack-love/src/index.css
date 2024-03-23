@@ -90,3 +90,11 @@ header {
   font-weight: 900;
   text-decoration: none;
 }
+
+.scale {
+  transition: transform 0.3s ease; /* 변환을 0.3초 동안 부드럽게 만듭니다. */
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}

@@ -7,6 +7,7 @@ import Creation from "./routes/Creation";
 import Result from "./routes/Result";
 import Entering from "./routes/Entering";
 import Waiting from "./routes/Waiting";
+import Question from "./routes/Question";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/result" element={<Result />} />
       <Route path="/enter_room" element={<Entering />} />
       <Route path="/waiting_room" element={<Waiting />} />
+      <Route path="/question" element={<Question />} />
     </Routes>
   );
 }
