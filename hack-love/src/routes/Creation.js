@@ -39,7 +39,7 @@ const Creation = () => {
         </Col>
         <Col className="d-flex justify-content-center align-items-center mt-3 mb-5">
           <div>
-            <Link to="/enter_room" className='nextBtn' style={{ color: '#0D0D0D', textDecoration: 'none' }}>CREATE</Link>
+            <Link to="/enter_room" className='link' style={{ color: '#0D0D0D', textDecoration: 'none',  fontWeight: '200', fontSize: '1.8rem', paddingLeft: '0' }}>CREATE</Link>
           </div>
         </Col>
       </Row>

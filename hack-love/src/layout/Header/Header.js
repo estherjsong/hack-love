@@ -13,8 +13,8 @@ const Header = () => {
             </div>
 
             <div>
-                <Link to="/create_room" className='link' style={{ color: 'rgba(13, 13, 13, 0.5)', textDecoration: 'none' }}>방 만들기</Link>
-                <Link to="/board" className='link' style={{ color: 'rgba(13, 13, 13, 0.5)', textDecoration: 'none' }}>문의하기</Link>
+                <Link to="/create_room" className='link' style={{ color: 'rgba(13, 13, 13, 0.5)', textDecoration: 'none', marginLeft: '4vw' }}>방 만들기</Link>
+                <Link to="/board" className='link' style={{ color: 'rgba(13, 13, 13, 0.5)', textDecoration: 'none', marginLeft: '4vw' }}>문의하기</Link>
             </div>
         </header>
     );

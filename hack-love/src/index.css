@@ -43,7 +43,6 @@ h4 {
   font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
-  margin-left: 4vw;
   display: inline-block;
   position: relative;
 }
@@ -90,35 +89,4 @@ header {
   font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
-}
-
-.nextBtn {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: #0D0D0D;
-  font-weight: 200;
-  font-size: 1.8rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#F2EBE5, #F4EAE1);
-  padding: 0 14vh 0 14vh;
-}
-
-
-.nextBtn::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(13, 13, 13, 0.3);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.nextBtn:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }

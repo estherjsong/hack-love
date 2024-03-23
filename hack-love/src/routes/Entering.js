@@ -5,7 +5,7 @@ import photo from '../img/photo_1.PNG';
 import { Row, Col, Label } from "reactstrap";
 
 const Entering = () => {
-    const [nickname, setNickname] = useState('디자이너 우');
+    const [nickname, setNickname] = useState('숑콜라');
 
     return (
         <Row className="align-items-center mb-5">
@@ -47,7 +47,7 @@ const Entering = () => {
             </Col>
             <Col className="d-flex justify-content-center align-items-center mt-3 mb-5">
                 <div>
-                    <Link to="/waiting_room" className='nextBtn' style={{ color: '#0D0D0D', textDecoration: 'none' }}>JOIN</Link>
+                    <Link to="/waiting_room" className='link' style={{ color: '#0D0D0D', textDecoration: 'none', fontWeight: '200', fontSize: '1.8rem'}}>JOIN</Link>
                 </div>
             </Col>
         </Row>
