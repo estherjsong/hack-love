@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header>
             <div>
-                사랑도 식후경
+                <Link to="/">사랑도 식후경</Link>
             </div>
 
             <div>
