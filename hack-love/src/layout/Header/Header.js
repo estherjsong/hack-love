@@ -6,11 +6,11 @@ const Header = () => {
     return (
         <header>
             <div>
-                사랑도 식후경
+                <Link to="/">사랑도 식후경</Link>
             </div>
 
             <div>
-                <Link to="/board">방 만들기</Link>
+                <Link to="/create_room">방 만들기</Link>
             </div>
             <div>
                 <Link to="/board">문의하기</Link>
