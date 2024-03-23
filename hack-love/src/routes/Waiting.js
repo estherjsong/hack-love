@@ -23,10 +23,10 @@ const Waiting = () => {
                 </Col>
 
                 <Col xs="12" lg="6" className="d-flex flex-column align-items-center">
-                    <img src={photoqr} alt="QR코드" className="centered-image" style={{ width: '35vh', height: '35vh', marginLeft: '10vw' }} />
-                    <p className='link' style={{ marginLeft: '10vw', marginTop: '1vw' }}>링크 공유하기</p>
+                    <img src={photoqr} alt="QR코드" className="centered-image" style={{ width: '35vh', height: '35vh', maxWidth: 'none'}} />
+                    <p className='link' style={{ marginTop: '1vw' }}>링크 공유하기</p>
                 </Col>
-                <Col xs="12" lg="4" id="scrollBar" style={{ maxWidth: '30vw', maxHeight: '35vh', overflowY: 'auto', marginTop: '-10vh', paddingLeft: '3vw' }}>
+                <Col xs="12" lg="5" id="scrollBar" style={{ maxHeight: '37vh', overflowY: 'auto', paddingLeft: '3vw' }}>
                     {nameList.map((name, index) => (
                         <Row key={index} className="align-items-center">
                             <div className="circle" style={{ width: '10px', height: '10px' }} />
@@ -36,6 +36,9 @@ const Waiting = () => {
                             </h3>
                         </Row>
                     ))}
+                </Col>
+                <Col lg="1">
+
                 </Col>
             </Row>
             <div style={{width: 'fit-content', margin: '0 auto'}}>

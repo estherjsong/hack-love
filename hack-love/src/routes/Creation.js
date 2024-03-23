@@ -17,11 +17,11 @@ const Creation = () => {
         </Col>
 
         <Col xs="12" lg="6" className="d-flex justify-content-center align-items-center mb-5">
-          <div className="circle" style={{width: '20vw', height: '20vw'}}>
+          <div className="circle" style={{width: '35vh', height: '35vh'}}>
             <img src={photo} alt="돼지국밥" className="centered-image" />
           </div>
         </Col>
-        <Col xs="12" lg="6">
+        <Col xs="12" lg="6" style={{justifyContent: 'space-around'}}>
           <CustomInput
             label={'방 이름'}
             value={roomName}
@@ -29,6 +29,7 @@ const Creation = () => {
               setRoomName(e.target.value);
             }}
           />
+          <div style={{height: '5vh'}}></div>
           <CustomInput
             label={'위치'}
             value={location}
