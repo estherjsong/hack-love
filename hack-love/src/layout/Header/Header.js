@@ -7,11 +7,11 @@ const Header = () => {
     return (
         <header>
             <div>
-                <Link to="/">사랑도 식후경</Link>
+                <Link to="/" className='logo'>사랑도 식후경</Link>
             </div>
 
             <div>
-                <Link to="/board" className='link'>방 만들기</Link>
+                <Link to="/create_room" className='link'>방 만들기</Link>
                 <Link to="/board" className='link'>문의하기</Link>
             </div>
         </header>

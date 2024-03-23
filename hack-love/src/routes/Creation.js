@@ -11,8 +11,8 @@ const Creation = () => {
   return (
     <div>
       <h4>원하는대로 고르기</h4>
-      <Row>
-        <Col xs="12" lg="6">
+      <Row className="align-items-center">
+        <Col xs="12" lg="6" className="d-flex justify-content-center align-items-center">
           <div className="circle">
             <img src={photo} alt="돼지국밥" className="centered-image" />
           </div>
